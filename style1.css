@@ -1,5 +1,6 @@
 :root {
   --header-size: 10vh;
+  --main-color: black;
 }
 
 header {
@@ -35,13 +36,31 @@ header {
   color: #ffffff;
 }
 
+.nav-item:hover {
+  background-color: rgb(255, 252, 252);
+  color: black;
+  cursor: pointer;
+}
+
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #000000;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
 .banner {
   width: 100%;
   height: calc(100vh - var(--header-size));
   background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .news {
