@@ -12,6 +12,10 @@
   margin: 5px 0;
 }
 
+.red-star {
+  color: red;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -19,9 +23,42 @@
   justify-content: space-between;
 }
 
+/* label[for="name-field"] {
+    background-color: blanchedalmond;
+} */
+
+.gender-label::after {
+  content: "*";
+  color: red;
+}
 
 
-.form-practice {font-size: 0.8em;
+.checkbox-label {
+    display: flex;
+  align-items: center;
+
+}
+/* input:required {
+    background-color: cadetblue;
+} */
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 1px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: black;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc13vIs3aB_lgliuE_qsimXOwDqKd9T2lP0w&s);
+  background-size: cover;
+}
+
+.form-practice {
+  font-size: 0.8em;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -42,7 +79,7 @@
   border: 1px solid lightgray;
 
   border-radius: 5px;
-margin-top: 0;
+  margin-top: 0;
 }
 
 .label-password {

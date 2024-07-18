@@ -9,20 +9,35 @@
   </head>
   <body>
     <form method="get" class="form">
-      <label for="name-field">Type your name</label>
-      <input type="text" id="name-field" />
+      <label for="name-field"> Type your name <span class="red-star">*</span> </label>
+      <input type="text" id="name-field" name="username" required />
 
-      <label class="flex-row"
-        >Type your email
-        <input type="email" placeholder="mail@.example.com" />
+      <label class="flex-row">
+        Type your email
+        <input type="email" placeholder="mail@.example.com" name="email" />
       </label>
 
-      <input type="password" placeholder="Type your password" />
+      <input type="password" placeholder="Type your password" required/>
 
       <label class="flex-row" for="tel-number">
         Type your phone number
         <input type="tel" id="tel-number" placeholder="+380501213123" />
       </label>
+
+      <span class="gender-label"> Choose your gender</span>
+     
+      <label>
+        <input type="radio" name="gender" value="male" required />Male</label
+      >
+      <label><input type="radio" name="gender" value="female" />Female</label>
+      <label>
+        <input type="radio" name="gender" value="non-binary" /> Non-binary
+      </label>
+
+      <label class="checkbox-label"><input type="checkbox" name="adult" />Are you adult?</label>
+      <label  class="checkbox-label">
+        <input type="checkbox" name="agree" />Are you agree whith rules?</label
+      >
 
       <button>Click me</button>
     </form>
