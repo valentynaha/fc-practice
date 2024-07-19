@@ -5,10 +5,26 @@
     src: url('./fonts/Mooli-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'PlaywriteHRLijeva';
+    src: url('./fonts/PlaywriteHRLijeva-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kablammo';
+    src: url('./fonts/Kablammo-Regular-VariableFont_MORF.ttf') format('truetype');
+}
+
 h1 {
     color: blue;
     font-size: 2em;
     margin: 1em 0;
     /* font-family: "Mooli", sans-serif; */
     font-family: 'Mooli';
+}
+
+p {
+    color: darkblue;
+    font-size: 1.2em;
+    font-family: 'Kablammo';
 }
