@@ -1,6 +1,6 @@
-@import url('./reset.css');
+@import url("./reset.css");
 /* @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap'); */
-@font-face {
+/* @font-face {
     font-family: 'Mooli';
     src: url('./fonts/Mooli-Regular.ttf') format('truetype');
 }
@@ -13,13 +13,13 @@
 @font-face {
     font-family: 'Kablammo';
     src: url('./fonts/Kablammo-Regular-VariableFont_MORF.ttf') format('truetype');
-}
+} */
 
-h1 {
+/* h1 {
     color: blue;
     font-size: 2em;
     margin: 1em 0;
-    /* font-family: "Mooli", sans-serif; */
+    font-family: "Mooli", sans-serif; 
     font-family: 'Mooli';
 }
 
@@ -27,4 +27,37 @@ p {
     color: darkblue;
     font-size: 1.2em;
     font-family: 'Kablammo';
+} */
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
 }
+
+article {
+  width: 15vw;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1em;
+  padding: 10px;
+  background-color: lightseagreen;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+@media screen and (max-width: 400px) {
+  main {
+      flex-direction: column;
+    }
+    
+    article {
+      background-color: lightskyblue;
+    width: auto;
+  }
+}
+
