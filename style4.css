@@ -50,7 +50,7 @@ h1 {
   margin: 1em 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   main {
       flex-direction: column;
     }
@@ -61,3 +61,14 @@ h1 {
   }
 }
 
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    article {
+        width: 30vw;
+        background-color: lightpink;
+    }
+}
