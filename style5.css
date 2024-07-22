@@ -1,29 +1,88 @@
 @import url(./reset.css);
 
 .background {
-    width: 100%;
-    height: 100vh;
-  background-color: rgb(173, 178, 32);  
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgb(173, 178, 32);   */
+  background-image: url("https://www.travelandleisure.com/thmb/kfcKH88gBt_d1ZJPFg_rUcyMekU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-grand-teton-USMNTNSIPOG0823-2538d183b9094e3fb59dd5e54bbe791c.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-color: rgba(0, 0, 0, 0.18);
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-form {
-    width: 30vw;
-    margin: 20px auto;
-    background-color: bisque;
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  padding: 1em;
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.187);
+  /* filter: blur(0.9px); */
+  overflow: hidden;
 }
 
-form * {
-    margin: 5px 0;
+.form h1 {
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 1em;
+  text-align: center;
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
-    .background {
-        background-color: cadetblue;
-    }
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+  font-weight: 700;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+button {
+  flex-grow: 1;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 0.5em;
+  color: white;
+}
+
+button:hover {
+  background-color: rgba(250, 250, 250, 0.825);
+  color: black;
+}
+
+/* @media screen and (min-width: 600px) and (max-width: 900px) {
+  .background {
+    background-color: cadetblue;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .background {
-        background-color: lemonchiffon;
+  .background {
+    background-color: lemonchiffon;
+  }
+} */
+
+@media screen and (max-width: 700px) {
+    .form {
+        width: 80vw;
     }
+
+    .flex-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
 }
+
