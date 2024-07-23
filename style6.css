@@ -1,6 +1,6 @@
 @import url(./reset.css);
 
-.box {
+/* .box {
     width: 100%;
     height: 100vh;
     background-image: url('./assets/36764fad2a1a6a0a6.84091603.png');
@@ -11,5 +11,51 @@
 @media  screen and (max-resolution: 200dpi) {
     .box {
 background-image: url('./assets/36764fad2a1a6a0a6.84091603.jpg');
+    }
+} */
+
+header {
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 1.5em;
+    justify-content: flex-end;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 98vh;
+
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 500px) {
+    #video {
+        display: none;
+    }
+
+    .video-banner {
+        background-image: url(./assets/28860-372055467_medium.jpg);
+        background-size: cover;
     }
 }
