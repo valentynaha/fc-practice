@@ -1,0 +1,62 @@
+@import url(./reset.css);
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 93vh repeat(2, 80vh);
+  /* gap: 1em; */
+  ove
+}
+
+.first-screen {
+  /* background-image: url(./assets/nature/silhouette-of-palm-trees-after-sunset-free-photo.jpg); */
+  background-image: url(./assets/nature/pexels-souvenirpixels-414612.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.first-screen-text {
+  font-size: 2em;
+  font-weight: 800;
+  width: 70%;
+  background-color: rgba(255, 203, 80, 0.813);
+  cursor: pointer;
+  padding: 0.5em 0;
+  margin-bottom: 3%;
+}
+
+.first-screen-text * {
+  margin: 0.5em;
+}
+
+.first-screen-text:hover {
+  background-color: rgba(255, 203, 80, 0.569);
+}
+
+.card {
+  border-top: 6px solid orange;
+  margin: 40px 20px;
+}
+
+.card:nth-child(even) {
+  margin-left: 40px;
+}
+
+.card:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 2em;
+  margin: 1em 0;
+}
